@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="discussion.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <title>
+        LUDUS
+    </title>
+
+
+</head>
+
+
+<body>
+   
+    <h1>
+        <div class="parallelogram">
+            
+            LUDUS   <button id="home"> HOME </button>
+                    <script>
+                        let home = "ludus.html";
+                        document.getElementById("home").onclick =
+                        function(){
+                            window.location.replace(home);
+                        }
+                    </script>
+                    <button id="trendinggames"> TRENDING GAMES </button>
+                    <script>
+                        let trending_games = "trending_games.html";
+                        document.getElementById("trendinggames").onclick =
+                        function(){
+                            window.location.replace(trending_games);
+                        }
+                    </script>
+                    <button id="reviews"> REVIEWS </button>
+                    <script>
+                        let reviews = "reviews.html";
+                        document.getElementById("reviews").onclick =
+                        function(){
+                            window.location.replace(reviews);
+                        }
+                    </script>
+                    <button id="news"> NEWS </button>
+                    <script>
+                        let news = "news.html";
+                        document.getElementById("news").onclick =
+                        function(){
+                            window.location.replace(news);
+                        }
+                    </script>
+                    <button id="discussion"> COMMUNITY </button>
+                    <script>
+                        let discussionA = "discussion.html";
+                        document.getElementById("discussion").onclick =
+                        function(){
+                            window.location.replace(discussionA);
+                        }
+                    </script>
+                    <button id="faq"> FAQ </button>
+                    <script>
+                        let faq = "faq.html";
+                        document.getElementById("faq").onclick =
+                        function(){
+                            window.location.replace(faq);
+                        }
+                    </script>
+        </div>
+
+    </h1>
+    <h2>
+        <div class="top-bar">
+            <h1>
+                Community Forum
+            </h1>
+        </div>
+        <div class="main">
+            <ol>
+            </ol>
+        </div>
+        <script src="thread.js"></script>
+        <script>
+            console.log(threads);
+            var container = document.querySelector('ol');
+            for (let thread of threads) {
+                var html = `
+                <li class="row">
+                    <a href="/thread.html?${thread.id}">
+                        <h4 class="title">
+                            ${thread.title}
+                        </h4>
+                        <div class="bottom">
+                            <p class="timestamp">
+                                ${new Date(thread.date).toLocaleString()}
+                            </p>
+                            <p class="comment-count">
+                                ${thread.comments.length} comments
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                `
+                container.insertAdjacentHTML('beforeend', html);
+            }
+        </script>
+    </h2>
+
+    <div id="app" class="app">
+        <u><my-component></my-component></u>
+       
+        <p>Hey family! Ludus editor here :) Can you guess what
+        number I am thinking of in my head? Ready...Set...Press The Button!</p>
+        <component1 @random="(random)=>count=random"></component1>
+        <p>I was thinking of number: {{ count }} </p>
+        <div></div>
+        <p> How many attempts did you take? :)</p>
+    </div>
+
+</body>
+</html>
+<script type="text/x-template" id="component1">
+    <div>
+        <button @click="$emit('random', Math.floor(Math.random()*10)+1)">Press to reveal my number</button>
+    </div>
+</script>
+<script>
+    let mymixin = {
+        created: function () {
+            this.game();
+        },
+        methods: {
+            game: function () {
+                console.log('Welcome to LUDUS Game Of The Week!');
+            },
+        },
+    };
+    let component = {
+        mixins: [mymixin],
+        template: '<p>Mini-Game Of The Week</p>',
+    };
+    var component1 = {
+        template: '#component1',
+    };
+    var app = new Vue({
+        el: '#app',
+        data: {
+            count: 0,
+        },
+        mixins: [mymixin],
+        components: {
+            component1,
+            'my-component': component,
+        },
+    });
+</script>
+
+
+
+

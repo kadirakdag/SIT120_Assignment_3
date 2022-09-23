@@ -1,0 +1,145 @@
+body {
+    background-image:url("Images/gow1.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+.parallelogram {
+    position: relative;
+    left: 10%;
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    transform: skew(10deg);
+    background: rgb(0, 0, 0);
+   
+}
+button {
+    background-color: black;
+    color: white;
+    font-family: "Verdana";
+    float: center;
+}
+
+h1 {
+    color: white;
+    
+    font-family: "Verdana";
+}
+h3 {
+    color: white;
+    font-family: "Verdana";
+    float: left;
+    padding: 100px;
+    position: absolute;
+    left: 450px;
+    top: 550px;
+    text-shadow: 1px 1px 6px black;
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    float: right;
+}
+
+h5 {
+    color: white;
+    font-family: "Verdana";
+    position: absolute;
+    text-shadow: 1px 1px 6px black;
+    left: 40%;
+    right: 10%;
+    
+}
+
+h2 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    
+}
+
+/* Slider components */
+
+.container{
+    position: absolute;
+    width: auto\9;
+    max-width: 150%;
+    left: -550px;
+    top: 400px;
+    height: auto;
+    float: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 3em;
+    
+}
+.swiper{
+    width: 40%;
+    height: fit-content;
+    float: right;
+    
+}
+.swiper-slide img{
+    width: 100%;
+    
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: red;
+}
+
+.swiper .swiper-pagination-bullet-active{
+    background: red;
+}
+div.swiper {
+    position: relative;
+    left: 250px;
+    top: -100px;
+}
+
+/* Discord Image */
+
+.discord {
+    position: absolute;
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    float: right;
+    left: -200px;
+    top: 900px;
+}
+
+/* At ludus symbol */
+.atludus {
+    position: absolute;
+    left: 500px;
+    top: 1000px;
+}
+
+.app {
+    background-color: gray;
+    position: absolute;
+    width: auto\9;
+    height: auto;
+    max-width: 130%;
+    left: 420px;
+}
+
+.link {
+    color: white;
+    font-family: "Verdana";
+    background-color: gray;
+    position: relative;
+    width: auto\9;
+    height: auto;
+    max-width: 130%;
+    margin-right:1.6em;
+    margin-bottom:3em;
+
+    top: 900px;
+    left: 60vw;
+}

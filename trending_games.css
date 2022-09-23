@@ -1,0 +1,101 @@
+
+body {
+    background-image:url("Images/gow1.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+button {
+    background-color: black;
+    color: white;
+    font-family: "Verdana";
+    float: center;
+}
+
+.parallelogram {
+    position: relative;
+    left: 10%;
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    transform: skew(10deg);
+    background: rgb(0, 0, 0);
+}
+
+h1 {
+    color: white;
+    
+    font-family: "Verdana";
+}
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Verdana";
+    background-color: #adacac;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td img {
+    height: 60px;
+    width: 60px;
+    border: 5px solid #e6e7e8;
+}
+
+.header_fixed {
+    max-height: 100vh;
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #dddddd;
+}
+
+.header_fixed thead th {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: #e6e7e8;
+    font-size: 15px;
+}
+
+td button {
+    border: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: #e6e7e8;
+}
+
+th,
+td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #edeef1;
+}
+
+tr:hover td {
+    color: #ca534d;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+
+
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <title>
+        LUDUS
+    </title>
+    <link rel="stylesheet" href="trending_games.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+</head>
+
+
+<body>
+    <h1>
+        <div class="parallelogram">
+            
+            LUDUS   <button id="home"> HOME </button>
+                    <script>
+                        let home = "ludus.html";
+                        document.getElementById("home").onclick =
+                        function(){
+                            window.location.replace(home);
+                        }
+                    </script>
+                    <button id="trendinggames"> TRENDING GAMES </button>
+                    <script>
+                        let trending_games = "trending_games.html";
+                        document.getElementById("trendinggames").onclick =
+                        function(){
+                            window.location.replace(trending_games);
+                        }
+                    </script>
+                    <button id="reviews"> REVIEWS </button>
+                    <script>
+                        let reviews = "reviews.html";
+                        document.getElementById("reviews").onclick =
+                        function(){
+                            window.location.replace(reviews);
+                        }
+                    </script>
+                    <button id="news"> NEWS </button>
+                    <script>
+                        let news = "news.html";
+                        document.getElementById("news").onclick =
+                        function(){
+                            window.location.replace(news);
+                        }
+                    </script>
+                    <button id="discussion"> COMMUNITY </button>
+                    <script>
+                        let discussionA = "discussion.html";
+                        document.getElementById("discussion").onclick =
+                        function(){
+                            window.location.replace(discussionA);
+                        }
+                    </script>
+                    <button id="faq"> FAQ </button>
+                    <script>
+                        let faq = "faq.html";
+                        document.getElementById("faq").onclick =
+                        function(){
+                            window.location.replace(faq);
+                        }
+                    </script>
+        </div>
+    </h1>
+
+</body>
+
+<main>
+
+    <div id="app" class="header_fixed">
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Game</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Active Players</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="Images/download.jpeg" /></td>
+                    <td>PUBG</td>
+                    <td><component3></component3></td>
+                    <td><active1 text="Million~"></active1></td>
+                    
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="Images/minecraft.jpeg"/></td>
+                    <td>Minecraft</td>
+                    <td><component2></component2></td>
+                    <td><active2 text="Million~"></active2></td>
+                    
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="Images/apex.jpeg"/></td>
+                    <td>Apex Legends</td>
+                    <td><component3></component3></td>
+                    <td><active3 text="Million~"></active3></td>
+                    
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="Images/fornite.jpeg" /></td>
+                    <td>Fornite</td>
+                    <td><component3></component3></td>
+                    <td><active4 text="Million~"></active4></td>
+                    
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><img src="Images/csgo.jpeg"/></td>
+                    <td>CS:GO</td>
+                    <td><component1></component1></td>
+                    <td><active5 text="Million~"></active5></td>
+                    
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><img src="Images/hearthstone.jpeg" /></td>
+                    <td>HearthStone</td>
+                    <td><component4></component4></td>
+                    <td><active6 text="Million~"></active6></td>
+                    
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><img src="Images/league.jpeg" /></td>
+                    <td>League Of Legends</td>
+                    <td><component5></component5></td>
+                    <td><active7 text="Million~"></active7></td>
+                    
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><img src="Images/callmobile.jpeg" /></td>
+                    <td>Call Of Duty Mobile</td>
+                    <td><component1></component1></td>
+                    <td><active8 text="Million~"></active8></td>
+                    
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><img src="Images/amongus.png"/></td>
+                    <td>Among Us</td>
+                    <td><component4></component4></td>
+                    <td><active9 text="Million~"></active9></td>
+                    
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><img src="Images/callwarzone.jpeg"/></td>
+                    <td>Call Of Duty Warzone</td>
+                    <td><component1></component1></td>
+                    <td><active10 text="Million~"></active10></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./trending_games.js"></script>
+
+
+</main>
+
+
+
+</html>

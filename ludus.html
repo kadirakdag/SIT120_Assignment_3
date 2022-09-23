@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <title>
+        LUDUS
+    </title>
+    <link rel="stylesheet" href="ludus.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+
+<body>
+    
+    <h1>
+        <div class="parallelogram">
+            
+            LUDUS   <button id="home"> HOME </button>
+                    <script>
+                        let home = "ludus.html";
+                        document.getElementById("home").onclick =
+                        function(){
+                            window.location.replace(home);
+                        }
+                    </script>
+                    <button id="trendinggames"> TRENDING GAMES </button>
+                    <script>
+                        let trending_games = "trending_games.html";
+                        document.getElementById("trendinggames").onclick =
+                        function(){
+                            window.location.replace(trending_games);
+                        }
+                    </script>
+                    <button id="reviews"> REVIEWS </button>
+                    <script>
+                        let reviews = "reviews.html";
+                        document.getElementById("reviews").onclick =
+                        function(){
+                            window.location.replace(reviews);
+                        }
+                    </script>
+                    <button id="news"> NEWS </button>
+                    <script>
+                        let news = "news.html";
+                        document.getElementById("news").onclick =
+                        function(){
+                            window.location.replace(news);
+                        }
+                    </script>
+                    <button id="discussion"> COMMUNITY </button>
+                    <script>
+                        let discussionA = "discussion.html";
+                        document.getElementById("discussion").onclick =
+                        function(){
+                            window.location.replace(discussionA);
+                        }
+                    </script>
+                    <button id="faq"> FAQ </button>
+                    <script>
+                        let faq = "faq.html";
+                        document.getElementById("faq").onclick =
+                        function(){
+                            window.location.replace(faq);
+                        }
+                    </script>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+
+    </h1>
+
+    <h2>
+        <!--Slider component-->
+        <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src= "Images/img1.jpeg"></div>
+                <div class="swiper-slide"><img src="Images/ow2.jpeg"></div>
+                <div class="swiper-slide"><img src="Images/hog.png"></div>
+        
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+        </div>
+    </h2>
+
+    <script>
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+    }); 
+    </script>
+
+    <div id="app" class="app">
+
+        <h1 v-bind:title="secret">{{message}}</h1>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: "Welcome to LUDUS",
+                secret: "Hello traveller :)",
+                count: 0,
+                url: "",
+                cleanUrl: "",
+            },
+            methods: {
+                humaniseUrl: function () {
+                    this.cleanUrl = this.url.replace(/^https?:\/\//, '').replace(/\/$/, '')
+                }
+            }
+        })
+    </script>
+
+
+    <h3>
+        ANNOUNCEMENTS  
+        <img src="Images/gowA.png" style="position:absolute; top:170px; left:-400px; width:auto\9; height: auto; max-width: 100%; float: right">
+        <img src="Images/pokA.png" style="position:absolute; top:170px; left: 0px; width:auto\9; height: auto; max-width: 100%; float: right">
+        <img src="Images/erA.png" style="position:absolute; top:170px; left:400px; width:auto\9; height: auto; max-width: 100%; float: right">
+    </h3>
+
+    
+    
+    <h5>
+        <div class="atludus">
+            @LUDUSGAMES
+        </div>
+        <img src="Images/discord.jpeg" class="discord">
+
+    </h5>
+
+
+    <div id="link" class="link">
+        Join Our Discord!
+        <p>
+            Generated Discord link: <a v-bind:href="url">{{cleanUrl}}</a>
+        </p>
+        <input type="text" class="form-control" v-model="url"/>
+        <button @click= "humaniseUrl" class="btn btn-primary">Generate link</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        var app = new Vue({
+            el: '#link',
+            data: {
+                url: "https://discord.com/",
+                cleanUrl: "",
+            },
+            methods: {
+                humaniseUrl: function () {
+                    this.cleanUrl = this.url.replace(/^https?:\/\//, '').replace(/\/$/, '')
+                }
+            }
+        })
+    </script>
+    
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+body {
+    background-image:url("Images/gow1.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+h1 {
+    color: white;
+    font-family: "Verdana";
+}
+button {
+    background-color: black;
+    color: white;
+    font-family: "Verdana";
+    float: center;
+
+}
+.parallelogram {
+    position: relative;
+    left: 10%;
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    transform: skew(10deg);
+    background: rgb(0, 0, 0);
+   
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+h1, h4, ol {
+    margin: 0;
+}
+p {
+    margin: 5px 0;
+}
+.top-bar {
+    background-color: darkseagreen;
+    padding: 100 100px;
+    position: absolute;
+    left: center;
+    top: -150px;
+}
+.main {
+    background-color: #F6F6EF;
+    padding: 30px 65px;
+}
+.row {
+    padding: 5px 0;
+}
+.bottom {
+    display: flex;
+    color: grey;
+    font-size: 12px;
+}
+.timestamp {
+    padding-right: 10px;
+}
+.app {
+    background-color: salmon;
+    text-align: center;
+}

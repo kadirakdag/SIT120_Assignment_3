@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEW PAGE</title>
+
+    
+    <title>
+        LUDUS
+    </title>
+    <link rel="stylesheet" href="reviews.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    
+
+
+</head>
+
+
+<body>
+    <h1>
+        <div class="parallelogram">
+            
+            LUDUS   <button id="home"> HOME </button>
+                    <script>
+                        let home = "ludus.html";
+                        document.getElementById("home").onclick =
+                        function(){
+                            window.location.replace(home);
+                        }
+                    </script>
+                    <button id="trendinggames"> TRENDING GAMES </button>
+                    <script>
+                        let trending_games = "trending_games.html";
+                        document.getElementById("trendinggames").onclick =
+                        function(){
+                            window.location.replace(trending_games);
+                        }
+                    </script>
+                    <button id="reviews"> REVIEWS </button>
+                    <script>
+                        let reviews = "reviews.html";
+                        document.getElementById("reviews").onclick =
+                        function(){
+                            window.location.replace(reviews);
+                        }
+                    </script>
+                    <button id="news"> NEWS </button>
+                    <script>
+                        let news = "news.html";
+                        document.getElementById("news").onclick =
+                        function(){
+                            window.location.replace(news);
+                        }
+                    </script>
+                    <button id="discussion"> COMMUNITY </button>
+                    <script>
+                        let discussionA = "discussion.html";
+                        document.getElementById("discussion").onclick =
+                        function(){
+                            window.location.replace(discussionA);
+                        }
+                    </script>
+                    <button id="faq"> FAQ </button>
+                    <script>
+                        let faq = "faq.html";
+                        document.getElementById("faq").onclick =
+                        function(){
+                            window.location.replace(faq);
+                        }
+                    </script>
+        </div>
+    </h1>
+
+    <main>
+        <div>
+            <section id="reviews-main">
+                <h1>Reviews</h1>
+            </section>
+        </div>
+    </main>
+
+    <h3>
+        <script src="reviews.js" ></script>
+        <div class="header_fixed">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cover</th>
+                        <th>Game Title</th>
+                        <th>Last Updated</th>
+                        <th>Read</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="Images/eldenringcover.webp"/></td>
+                        <td>Elden Ring</td>
+                        <td>20/9/2022</td>
+                        <td><button id="view"> View </button>
+                            <script>
+                                let view = "elden_ring.html";
+                                document.getElementById("view").onclick =
+                                function(){
+                                    window.location.replace(view);
+                                }
+                            </script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="Images/Pokemon_Legends_Arceus_cover.jpeg" /></td>
+                        <td>Pokemon: Legends Arceus</td>
+                        <td> - </td>
+                        <td><button>Coming Soon</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Images/Horizon_Forbidden_West_cover_art.jpeg"/></td>
+                        <td>Horizon: Forbidden West</td>
+                        <td> - </td>
+                        <td><button>Coming Soon</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Images/sifu_r4aq.jpeg"/></td>
+                        <td>Sifu</td>
+                        <td> - </td>
+                        <td><button>Coming Soon</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Images/fifa-main.jpeg"/></td>
+                        <td>FIFA 23</td>
+                        <td> - </td>
+                        <td><button>Coming Soon</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+        
+    </h3>
+
+    <div id="app" class="app">
+        <h2 v-bind:title="hidden">{{heading}}</h2>
+        <ul>
+            <li style="list-style-type:none" v-for="todo in todos">{{todo.id}}) {{todo.text}}</li>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                heading: "Want a review for a game?",
+                hidden: "We want your feedback!",
+                todos: [
+                    { text: 'Share your gaming recommendations in the community discussion', id: 1},
+                    { text: 'Let us know via our @LUDUS discord', id: 2},
+                    { text: 'Comment your suggestion in our Instagram comments @LUDUS', id: 3}
+                ]
+            }
+        })
+    </script>
+
+</body>
+
+
+
+</html>
+
+

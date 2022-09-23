@@ -1,0 +1,136 @@
+
+body {
+    background-image:url("Images/gow1.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+button {
+    background-color: black;
+    color: white;
+    font-family: "Verdana";
+    float: center;
+}
+
+.parallelogram {
+    position: relative;
+    left: 10%;
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    transform: skew(10deg);
+    background: rgb(0, 0, 0);
+   
+}
+
+h1 {
+    color: white;
+    font-family: "Verdana";
+}
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Verdana";
+    background-color: #adacac;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Verdana";
+}
+
+.header_fixed {
+    max-height: 100vh;
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #dddddd;
+}
+
+.header_fixed thead th {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: #e6e7e8;
+    font-size: 1.5vw;
+}
+
+th,
+td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    font-size: 1.5vw;
+}
+
+td img {
+    height: 60px;
+    width: 60px;
+    border: 5px solid #e6e7e8;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #edeef1;
+}
+
+tr:hover td {
+    color: #ca574a;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+td button {
+    border: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: #e6e7e8;
+}
+h3 {
+    position: absolute;
+    top: 22vw;
+    left: 25vw;
+    max-width: 100%;
+    width: auto\9;
+    height: auto;
+    margin-top: 1.8em;
+}
+#reviews-main h1 {
+    text-align: center;
+    margin-bottom: 1.65em;
+    position: absolute;
+    top: 120px;
+    text-shadow: 1px 1px 6px black;
+    font-size: 4vw;
+    left: 40vw;
+    height: auto;
+    width: auto\9;
+    max-width: 100%;
+    margin-bottom: 1.65em;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app {
+    background-color: lavender;
+    position: absolute;
+    width: auto\9;
+    height: auto;
+    max-width: 130%;
+    left: 410px;
+    top: 800px;
+    text-align: center;
+    
+}

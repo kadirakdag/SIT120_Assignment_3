@@ -1,0 +1,216 @@
+.parallelogram {
+    position: relative;
+    left: 10%;
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    transform: skew(10deg);
+    background: rgb(0, 0, 0);
+   
+}
+body {
+    background-image:url("Images/gow1.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-family: "Verdana";
+    float: center;
+}
+
+h1, h2, h3, h4, h5 {
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0.5em 0;
+    color: white;
+    font-family: "Verdana";
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+
+#review-image {
+    background: url('Images/eldenring3.jpeg') top center no-repeat;
+    height: 700px;
+}
+
+.review-text {
+    max-width: 800px;
+    margin: -50px auto 0;
+    position: absolute;
+    top: 30%;
+    left: 300px;
+    text-shadow: 1px 1px 6px black;
+}
+
+.hero-marketing-text h1 {
+    color: #eee;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+.hero-marketing-text span {
+    color: #ff4520;
+}
+
+
+#summary .flex {
+    position: relative;
+    top: -500px;
+}
+
+#summary .box {
+    background-color: #252525;
+    padding: 70px 20px 40px;
+    flex-basis: 45%;
+    position: relative;
+}
+
+#summary .box .summary-image {
+    float: left;
+    width: 30%;
+}
+
+#summary .box .summary-image img {
+    width: 100%;
+}
+
+#summary .box .summary-content {
+    float: left;
+    margin-left: 25px;
+    width: 60%;
+    color: white;
+}
+
+#summary .box .summary-content label {
+    color: #999;
+    font-size: 0.75em;
+}
+
+#summary .box .summary-content strong {
+    color: #eee;
+    font-size: 0.75em;
+}
+
+
+#recent-reviews h1 {
+    text-align: center;
+    margin-bottom: 1.65em;
+    position: relative;
+    top: -280px;
+    text-shadow: 1px 1px 6px black;
+    
+}
+
+#recent-reviews .box {
+    flex-basis: 23%;
+    position: relative;
+    text-align: center;
+    top: -300px;
+}
+
+#recent-reviews .box .rating-badge {
+    border-radius: 28px;
+    padding: 13px;
+    font-size: 1.1em;
+    color: #eee;
+    font-weight: 600;
+    background-color: #FFB320;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+}
+
+#recent-reviews .box .rating-badge.purple {
+    background-color: #694EAE;
+}
+
+#recent-reviews .box .rating-badge.green {
+    background-color: #4EAE60;
+}
+
+#recent-reviews .box .rating-badge.violet {
+    background-color: #FF20AE;
+}
+
+#recent-reviews .box .recent-reviews-image {
+    margin-bottom: 0.75em;
+    overflow: hidden;
+}
+
+#recent-reviews .box .recent-reviews-image img {
+    width: 100%;
+}
+
+#recent-reviews .box p {
+    color: #999;
+}
+
+
+#add-media .add-media-box {
+    flex-basis: 28%;
+    background-color: #252525;
+    padding: 20px 100px 25px;
+    border: 1px solid #4a4a4a;
+    position: relative;
+    top: -200px;
+    
+}
+
+#add-media .add-media-box .video-container {
+    width: 500px;
+    height: 225px;
+}
+
+#add-media .add-media-box h3 {
+    color: #eee;
+    
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+div.gallery:hover {
+    border: 1px solid #777;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
