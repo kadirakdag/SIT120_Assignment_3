@@ -12,6 +12,7 @@
         </h1>
     </div>
     
+    <!-- Functionality to adding comments and going back -->
     <div class="main">
         <div class="header">
         </div>
@@ -29,6 +30,8 @@
                         }
                     </script>
     <script src="thread.js"></script>
+    <!-- JS functions to allow for timestamps, storing comments, adding comments and
+         storing values for the local user comment input -->
     <script>
         var id = window.location.search.slice(1);
         var thread = threads.find(t => t.id == id);

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,10 +17,10 @@
 
 </head>
 
-
 <body>
-   
+   <!-- Top banner -->
     <h1>
+
         <div class="parallelogram">
             
             LUDUS   <button id="home"> HOME </button>
@@ -73,6 +74,7 @@
         </div>
 
     </h1>
+    <!-- Community forum options -->
     <h2>
         <div class="top-bar">
             <h1>
@@ -110,6 +112,8 @@
         </script>
     </h2>
 
+    <!-- Mini-game  -->
+
     <div id="app" class="app">
         <u><my-component></my-component></u>
        
@@ -123,6 +127,7 @@
 
 </body>
 </html>
+<!-- vue.js integration for custom events and mixins -->
 <script type="text/x-template" id="component1">
     <div>
         <button @click="$emit('random', Math.floor(Math.random()*10)+1)">Press to reveal my number</button>
